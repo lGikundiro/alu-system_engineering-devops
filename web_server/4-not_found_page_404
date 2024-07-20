@@ -4,7 +4,7 @@
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
-echo "This is Cedric from Holberton School :)" | sudo tee /var/www/html/index.html > /dev/null
+echo "This is Liliane from Holberton School :)" | sudo tee /var/www/html/index.html > /dev/null
 
 # codes to redirect a specific endpoint (eg: redirect /redirect_me to https://www.github.com/lGikundiro)
 string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.github.com\/lGikundiro permanent;"
