@@ -18,8 +18,8 @@ frontend lGikundiro-frontend
 backend lGikundiro-backend
         mode http 
         balance roundrobin
-        server 54.221.174.188:80 check
-        server 34.226.191.18:80 check
+        server backend1 54.221.174.188:80 check
+        server backend2 34.226.191.18:80 check
         timeout connect 30s
         timeout server 30s
 "
