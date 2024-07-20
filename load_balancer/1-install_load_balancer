@@ -10,14 +10,14 @@ apt-get -y install haproxy
 # edit config file
 server_config=\
 "
-frontend izabayo-frontend
+frontend lGikundiro-frontend
         bind *:80
         mode http
-        default_backend izabayo-backend
-backend izabayo-backend
+        default_backend lGikundiro-backend
+backend lGikundiro-backend
         balance roundrobin
-        server 6238-web-01 54.196.216.8:80 check
-        server 6238-web-02 98.80.15.59:80 check
+        server 6238-web-01 54.221.174.188 check
+        server 6238-web-02 54.221.174.188 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 

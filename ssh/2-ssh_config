@@ -1,4 +1,4 @@
-Host *
+Host 54.221.174.188
     IdentityFile ~/.ssh/school
     IdentitiesOnly yes
 
